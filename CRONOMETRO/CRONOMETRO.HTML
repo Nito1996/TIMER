@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrono TIMER</title>
+    <link rel="stylesheet"
+        href="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\CRONOMETRO\CRONOMETRO.CSS">
+</head>
+
+<body>
+    <div class="mainTimerDiv">
+        <div class="daysDiv">
+            <div class="days" id="days">00</div>
+            <p>DAYS</p>
+        </div>
+        <div class="hoursDiv">
+            <div class="hours" id="hours">00</div>
+            <p>HOURS</p>
+        </div>
+        <div class="minutesDiv">
+            <div class="minutes" id="minutes">00</div>
+            <p>MINUTES</p>
+        </div>
+        <div class="secondsDiv">
+            <div class="seconds" id="seconds">00</div>
+            <p>SECONDS</p>
+        </div>
+    </div>
+    <div class="mainEditDiv">
+        <div>
+            <span class="spanLeftBox">
+                <button type="button" tabindex="-1" class="btnLeft" id="btnLeft" value="-1"><</button>
+            </span>
+            <label for="editHours">HOURS</label>
+            <input class="editHours" id="editHours" type="number" min="0" max="23" placeholder="00" value="0">
+            <span class="spanRightBox">
+                <button type="button" tabindex="-1" class="btnRight" id="btnRight" value="1">></button>
+            </span>
+        </div>
+        <div>
+            <span class="spanLeftBox">
+                <button type="button" tabindex="-1" class="btnLeft" id="btnLeft" value="-1"><</button>
+            </span>
+            <label for="editMinutes">MINUTES</label>
+            <input class="editMinutes" id="editMinutes" type="number" min="0" max="59" placeholder="00" value="0">
+            <span class="spanRigthBox">
+                <button type="button" tabindex="-1" class="btnRight" id="btnRight" value="1">></button>
+            </span>
+        </div>
+        <div>
+            <span class="spanLefttBox">
+                <button type="button" tabindex="-1" class="btnLeft" id="btnLeft" value="-1"><</button>
+            </span>
+            <label for="editSeconds">SECONDS</label>
+            <input class="editSeconds" id="editSeconds" type="number" min="0" max="59" placeholder="00" value="0">
+            <span class="spanRightBox">
+                <button type="button" tabindex="-1" class="btnRight" id="btnRight" value="1">></button>
+            </span>
+        </div>
+    </div>
+    <div class="mainBtnsDiv">
+        <button type="button" class="btnStart" id="btnStart" onclick="timer()">START</button>
+        <button type="button" class="btnStop" id="btnStop" onclick="pause()">PAUSE</button>
+        <button type="button" class="btnRestart" id="btnRestart" onclick="restart()">RESTART</button>
+    </div>
+    
+    <script
+        src="C:\Users\randy\OneDrive\Escritorio\ProyectosCursoEmmanuel\EmmaHomeworks\CRONOMETRO\CRONOMETRO.JS"></script>
+</body>
+
+</html>

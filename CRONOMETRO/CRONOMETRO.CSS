@@ -1,0 +1,227 @@
+@font-face {
+    font-family: "Digital";
+    src: url("C:/Users/randy/AppData/Local/Microsoft/Windows/Fonts/digital-7.italic.ttf") format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: #000000;
+}
+
+p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.mainTimerDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+
+.daysDiv,
+.hoursDiv,
+.minutesDiv,
+.secondsDiv {
+    margin: 0px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    box-shadow: 0px 0px 6px 2px #727272 inset;
+    color: #FF9500;
+    font-family: "Digital";
+    font-size: 100px;
+    font-weight: lighter;
+    width: 170px;
+    height: 140px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/*Span y botones y Selects*/
+.spanRightBox {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.spanLeftghtBox {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.btnRight {
+    width: 45px;
+    height: 48px;
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    border-radius: 0;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: inherit;
+    font-weight: 400;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: visible;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+.btnLeft {
+    width: 45px;
+    height: 48px;
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    border-radius: 0;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: inherit;
+    font-weight: 400;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: visible;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+#editMinutes,
+#editHours,
+#editSeconds {
+    height: 20px;
+    width: 50px;
+    border: transparent;
+    margin-bottom: 0;
+    border-width: 2px;
+    box-shadow: none;
+    padding: 10px 12px;
+    height: 48px;
+    font-size: 25px;
+    font-family: "Digital";
+    line-height: 1.6;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    color: #000000;
+    background-color: #FF9500;
+    text-align: center;
+}
+
+.mainEditDiv {
+    box-sizing: border-box;
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #EEE;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+    max-width: 100%;
+    cursor: default;
+    color: #FF9500;
+}
+
+/*btn start/stop*/
+
+.mainBtnsDiv {
+    box-sizing: border-box;
+    margin: 0px, 0px, 20px;
+    padding: 0px, 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #EEE;
+}
+
+.btnStop,
+.btnStart,
+.btnRestart {
+    width: 80px;
+    height: 48px;
+    padding: 8px 12px;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: inherit;
+    font-weight: bold;
+    text-align: center;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    border-color: #000000;
+    white-space: nowrap;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: visible;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+
+/*HOVERS*/
+
+.btnStop:hover,
+.btnStart:hover,
+.btnRestart:hover {
+    background-color: #FF9500;
+    transition: 0.1s;
+}
